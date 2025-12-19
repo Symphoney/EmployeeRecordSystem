@@ -4,4 +4,7 @@ project(EmployeeRecordSystem)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(EmployeeRecordSystem main.cpp
-        Employee.cppm)
+        Employee.cppm
+        Employee.h
+        Employee.h
+        Employee.cpp)
