@@ -1,13 +1,11 @@
-//
-// Created by Micah on 12/18/2025.
-//
+#include <string>
 
 export module Employee;
 
-import <string>;
-namespace Record {
-    const int DefaultStartingSalary {30'000};
-    export const int DefaultRaiseAndDemeritAmount {1'000};
+export namespace Record {
+
+    export const int DefaultStartingSalary { 30'000 };
+    export const int DefaultRaiseAndDemeritAmount { 1'000 };
 
     export class Employee {
     public:
@@ -15,15 +13,10 @@ namespace Record {
 
         void promote(int raiseAmount = Record::DefaultRaiseAndDemeritAmount);
         void demote(int demeritAmount = Record::DefaultRaiseAndDemeritAmount);
-        /*
-         * They have int parameters that have a default value equal to DefaultRaiseAndDermitAmount
-         * Other code can omit the parameter and the default will automatically be used
-         */
-        void hire(); // Hires or rehires the employee
-        void fire(); // Fires the employee
-        void display() const; // Outputs employee info to console
+        void hire();
+        void fire();
+        void display() const;
 
-        // Getters and setters
         void setFirstName(const std::string& firstName);
         const std::string& getFirstName() const;
 
@@ -41,11 +34,9 @@ namespace Record {
     private:
         std::string m_firstName;
         std::string m_lastName;
-        int m_employeeNumber {-1};
+        int m_employeeNumber { -1 };
         int m_salary { DefaultStartingSalary };
-        bool m_hired {false};
-
+        bool m_hired { false };
     };
+
 }
-
-

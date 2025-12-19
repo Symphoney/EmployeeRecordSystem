@@ -4,7 +4,19 @@
 	"compiler-id" : "MSVC",
 	"compiler-simulate-id" : "",
 	"config" : "Debug",
-	"cxx-modules" : {},
+	"cxx-modules" : 
+	{
+		"CMakeFiles/EmployeeRecordSystem.dir/Employee.cppm.obj" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "CXX_MODULES",
+			"relative-directory" : "",
+			"source" : "D:/CLionProjects/EmployeeRecordSystem/Employee.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PRIVATE"
+		}
+	},
 	"dir-cur-bld" : "D:/CLionProjects/EmployeeRecordSystem/cmake-build-debug",
 	"dir-cur-src" : "D:/CLionProjects/EmployeeRecordSystem",
 	"dir-top-bld" : "D:/CLionProjects/EmployeeRecordSystem/cmake-build-debug",
